@@ -22,12 +22,25 @@ Clone NexityNetwork/medusa, audit the commerce backend, build what's feasible, w
 - **www apps**: All depend on workspace packages (docs-ui, docs-utils, remark-rehype-plugins) which are also uncompiled source.
 - **Conclusion**: A full `turbo run build` is required before any package can be used. This is a 10+ minute build with 81 workspaces. Not feasible in this session.
 
+## DB Setup (Completed)
+- Local PostgreSQL 17 running on localhost:5432
+- Database: medusa, User: medusa, Password: medusa123
+- pg_hba.conf set to trust for local connections
+- DATABASE_URL: postgres://medusa:medusa123@localhost:5432/medusa
+
+## Deploy Strategy (In Progress)
+- Full monorepo compile is infeasible for this session
+- Fallback: Create a standalone Next.js status dashboard at `status-dashboard/`
+- Uses published @medusajs/ui/icons from npm (not workspace source)
+- Static export via `output: 'export'` → deploy to deploy_wfp
+- This is NOT the actual Medusa product — it's an audit/deploy status page
+
 ## Steps
 - [x] 1. AUDIT — Dependency health, build system, deployable artifacts
-- [ ] 2. DB — Provision local Postgres, capture connection string
-- [ ] 3. BUILD — Install deps and build monorepo (or deployable subset)
-- [ ] 4. RUN — Configure .env and try to start the backend (or integration-test API)
-- [ ] 5. DEPLOY — Create standalone deployable app using published Medusa UI, build, deploy via deploy_wfp
+- [x] 2. DB — Provision local Postgres
+- [x] 3. BUILD — Install deps (monorepo subset not feasible)
+- [ ] 4. RUN — Backend startup blocked (needs full monorepo compile)
+- [ ] 5. DEPLOY — Build standalone status dashboard, deploy via deploy_wfp
 - [ ] 6. REPORT — Branch, commit SHA, live URL, status
 
 ## Notes
