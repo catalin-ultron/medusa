@@ -49,7 +49,7 @@
   },
   "scripts": {
     "test": "../../../node_modules/.bin/jest --passWithNoTests --testPathPattern=src",
-    "build": "tsc",
+    "build": "yarn run -T tsc",
     "watch": "yarn run -T tsc --watch"
   },
   "engines": {
