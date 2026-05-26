@@ -1,0 +1,21 @@
+{
+  "name": "ultron-medusa-backend",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "medusa develop",
+    "build": "medusa build",
+    "start": "medusa start",
+    "db:setup": "medusa db:setup",
+    "db:migrate": "medusa db:migrate",
+    "db:sync-links": "medusa db:sync-links"
+  },
+  "dependencies": {
+    "@medusajs/framework": "latest",
+    "@medusajs/medusa": "latest",
+    "@medusajs/cli": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20"
+  }
+}
