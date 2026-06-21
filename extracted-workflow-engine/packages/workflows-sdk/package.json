@@ -22,13 +22,13 @@
   "author": "Medusa",
   "license": "MIT",
   "devDependencies": {
-    "@medusajs/types": "*"
+    "@medusajs/types": "workspace:*"
   },
   "dependencies": {
-    "@medusajs/deps": "*",
-    "@medusajs/modules-sdk": "*",
-    "@medusajs/orchestration": "*",
-    "@medusajs/utils": "*",
+    "@medusajs/deps": "workspace:*",
+    "@medusajs/modules-sdk": "workspace:*",
+    "@medusajs/orchestration": "workspace:*",
+    "@medusajs/utils": "workspace:*",
     "ulid": "^2.3.0"
   },
   "scripts": {

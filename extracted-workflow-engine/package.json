@@ -12,6 +12,10 @@
     "clean": "pnpm -r exec rm -rf dist"
   },
   "devDependencies": {
-    "typescript": "^5.6.0"
+    "typescript": "^5.6.0",
+    "@swc/core": "^1.7.40",
+    "@swc/jest": "^0.2.36",
+    "jest": "^29.7.0",
+    "ts-node": "^10.9.2"
   }
 }

@@ -28,7 +28,7 @@
     "bignumber.js": "^9.1.2"
   },
   "devDependencies": {
-    "@medusajs/deps": "*"
+    "@medusajs/deps": "workspace:*"
   },
   "peerDependencies": {
     "ioredis": "^5.4.1",

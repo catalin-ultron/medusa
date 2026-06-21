@@ -24,11 +24,11 @@
     "build": "rm -rf dist && tsc --build"
   },
   "devDependencies": {
-    "@medusajs/types": "*"
+    "@medusajs/types": "workspace:*"
   },
   "dependencies": {
-    "@medusajs/deps": "*",
-    "@medusajs/orchestration": "*",
-    "@medusajs/utils": "*"
+    "@medusajs/deps": "workspace:*",
+    "@medusajs/orchestration": "workspace:*",
+    "@medusajs/utils": "workspace:*"
   }
 }
