@@ -1,0 +1,34 @@
+{
+  "name": "@medusajs/modules-sdk",
+  "version": "2.13.6",
+  "description": "SDK for medusa modules",
+  "main": "dist/index.js",
+  "export": {
+    ".": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist",
+    "!dist/**/__tests__",
+    "!dist/**/__fixtures__",
+    "!dist/**/__mocks__"
+  ],
+  "author": "Medusa",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc --build"
+  },
+  "devDependencies": {
+    "@medusajs/types": "*"
+  },
+  "dependencies": {
+    "@medusajs/deps": "*",
+    "@medusajs/orchestration": "*",
+    "@medusajs/utils": "*"
+  }
+}
